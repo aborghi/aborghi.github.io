@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexandre Borghi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<base target="_blank">
+<style>
+  :root {
+    --text: #222;
+    --muted: #666;
+    --accent: #8a5a2b;
+    --border: #e2e2e2;
+    --bg-soft: #fafafa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    max-width: 42em;
+    margin: 0 auto;
+    padding: 4em 1.5em 6em;
+    font-family: "Source Serif 4", Charter, Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: #efe6da; }
+
+  header { margin-bottom: 2.5em; }
+  h1 {
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin: 0 0 0.5em;
+  }
+  .rule {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 2.5em 0 1em;
+  }
+  p { margin: 1em 0; }
+  ul { margin: 0.55em 0; padding-left: 1.4em; }
+  li { margin: 0.2em 0; padding-left: 0.2em; }
+  li::marker { color: var(--accent); }
+  main a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  main a:hover,
+  main a:focus-visible {
+    color: #6d4520;
+  }
+
+  .subtitle a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .subtitle a:hover,
+  .subtitle a:focus-visible {
+    color: var(--accent);
+  }
+
+  .stitle {
+    margin: 1.75em 0 0.75em;
+    font-size: 0.85em;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #1f4e79;
+  }
+
+  .profile-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin: 1.75em 0;
+  }
+  .profile-row figure { margin: 0; flex: none; }
+  .profile-name {
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #444;
+  }
+  .subtitle {
+    font-size: 1em;
+    color: var(--muted);
+    margin-top: 0.3em;
+  }
+
+  .subtitle a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .subtitle a:hover,
+  .subtitle a:focus-visible {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  figure { margin: 1.75em 0; }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg-soft);
+    transition: box-shadow 0.2s ease;
+  }
+  figure img:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+  figure.profile img {
+    max-width: 230px;
+    height: auto;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: var(--border);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  }
+  figcaption {
+    font-size: 0.85em;
+    color: var(--muted);
+    margin-top: 0.5em;
+    font-style: italic;
+    text-align: center;
+  }
+
+  figure.inline {
+    float: right;
+    width: 33%;
+    margin: 0.25em 0 1em 1.5em;
+  }
+  figure.inline img { width: 100%; }
+  figure.inline figcaption { text-align: left; }
+
+
+  footer {
+    clear: both;
+    margin-top: 4em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    font-size: 0.85em;
+    color: var(--muted);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="profile-row">
+    <figure class="profile">
+      <img src="assets/alexandre_borghi.jpg" alt="Profile picture" width="230">
+    </figure>
+    <div>
+      <div class="profile-name">Alexandre Borghi</span></div>
+      <div class="subtitle">
+        <a href="https://x.com/_Alex_Borghi_">https://x.com/_Alex_Borghi_</a>
+      </div>
+      <div class="subtitle">
+        <a href="https://www.linkedin.com/in/alexandreborghi">https://www.linkedin.com/in/alexandreborghi</a>
+      </div>
+    </div>
+  </div>
+  <hr class="rule">
+</header>
+
+<main>
+
+<p class="stitle">About me</p>
+
+<p>I am a scientist and engineer, currently an MTS at <a href="https://microsoft.ai/">Microsoft AI</a> Superintelligence, where I work on RL and VLMs. The first research lab I joined was the <a href="https://www.lre.epita.fr/">LRDE</a> in 2005. After graduating from <a href="https://www.epita.fr/en/">EPITA</a> in 2007, I completed a MSc in AI and Decision from <a href="https://www.sorbonne-universite.fr/en">Paris VI</a> in 2008 and a PhD in Computer Science from <a href="https://www.universite-paris-saclay.fr/">Paris XI</a> in 2011. I explored compressed sensing, convex optimization, combinatorial optimization and parallel algorithms. Since transitioning into ML in 2017 I have been working as Research Engineer/Scientist across various ML research teams and companies including <a href="https://sambanova.ai/">SambaNova</a>, <a href="https://graphcore.ai/">Graphcore</a>, <a href="https://www.imaginationtech.com/">Imagination Technologies</a> and <a href="https://www.astrazeneca.co.uk/">AstraZeneca</a>.</p>
+
+<p class="stitle">Some recent (and not so recent) works</p>
+<ul>
+  <li>Stability of off-policy RLVR algorithms and accelerating on-policy RLVR</li>
+  <li>Preserving answer diversity in supervised finetuning</li>
+  <li>LLMs to solver AIME-style problems, informal proof generation and formalization in Lean</li>
+  <li>New algorithms to train speculators for speculative decoding</li>
+  <li>Long-horizon multimodal RL</li>
+  <li>Sample efficient RL and scaling, in particular model-based RL and planning, and scalable model-free RL</li>
+  <li>Architectures and algorithms to train CNNs and ViTs for object detection, 6D pose and depth estimation</li>
+  <li>Efficient neural network architectures, including on AI accelerators</li>
+  <li>GPU kernels for computer graphics, computer vision and CNN inference, on PowerVR, AMD, Intel and NVIDIA GPUs</li>
+</ul>
+
+<p class="stitle">Competitions</p>
+
+<figure class="inline">
+  <img src="assets/amandine_flachs_lisa_su_alexandre_borghi.jpg" alt="From left to right: AF, LS and me." width="400">
+  <figcaption>Left to right: me (Alex Borghi), Lisa Su and Amandine Flachs. At AMD Advancing AI 2024.</figcaption>
+</figure>
+
+<p>In my spare time, before the era of coding agents, I used to participate in ML competitions and AI hackathons, most of the time with the incredible <a href="https://x.com/AmandineFlachs">Amandine</a> <a href="https://www.linkedin.com/in/amandineflachs">Flachs</a>. We've won 1st place at the <a href="https://www.amd.com/en/developer/resources/2024-pervasive-ai-developer-contest-winners.html">AMD Pervasive AI 2024</a> with a 7B LLM trained for mathematics on AMD GPUs, and won the <a href="https://openai2025.devpost.com/project-gallery">OpenAI Open Model Hackathon</a> with a Dota2 bot using gpt-oss in 2025. We've also placed in the top 3 in several other competitions organized by ARM and IBM, with agentic systems or our own local models. Before that, I won 3rd place in the OpenAI Retro Contest (a meta-RL competition) in 2018, which allowed me to familiarize myself with state-of-the-art deep RL methods.</p>
+</main>
+
+<footer>Last updated 2026</footer>
+
+</body>
+</html>
